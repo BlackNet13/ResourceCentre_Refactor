@@ -227,12 +227,13 @@ public class ResourceCentre {//
 	
 	public static void addChromebook(ArrayList<Chromebook> chromebookList, Chromebook cb) {
 		Chromebook item;
+		String CB_getasset = cb.getAssetTag();
 		for(int i = 0; i < chromebookList.size(); i++) {
 			item = chromebookList.get(i);
-			if (item.getAssetTag().equalsIgnoreCase(cb.getAssetTag()) )
+			if (item.getAssetTag().equalsIgnoreCase(CB_getasset) )
 				return;
 		}
-		if ((cb.getAssetTag().isEmpty()) || (cb.getDescription().isEmpty()) ) {
+		if ((CB_getasset.isEmpty()) || (cb.getDescription().isEmpty()) ) {
 			return;
 		}
 		
