@@ -200,12 +200,15 @@ public class ResourceCentre {//
 	
 	public static void addCamcorder(ArrayList<Camcorder> camcorderList, Camcorder cc) {
 		Camcorder item;
+		String ccAssetTag = cc.getAssetTag();
+		String ccDescription = cc.getDescription();
+
 		for(int i = 0; i < camcorderList.size(); i++) {
 			item = camcorderList.get(i);
-			if (item.getAssetTag().equalsIgnoreCase(cc.getAssetTag()) )
+			if (item.getAssetTag().equalsIgnoreCase(ccAssetTag) )
 				return;
 		}
-		if ((cc.getAssetTag().isEmpty()) || (cc.getDescription().isEmpty()) ) {
+		if ((ccAssetTag.isEmpty()) || (ccDescription.isEmpty()) ) {
 			return;
 		}
 		camcorderList.add(cc);
