@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class ResourceCentre {
 
 
-	private static final int EXIT_RESOURCE_CENTRE = 5;
+	private static final int OPTION_QUIT = 5;
 
 	public static void main(String[] args) {
 
@@ -17,7 +17,7 @@ public class ResourceCentre {
 
 		int option = 0;
 
-		while (option != EXIT_RESOURCE_CENTRE) {
+		while (option != OPTION_QUIT) {
 
 			ResourceCentre.menu();
 			option = Helper.readInt("Enter an option > ");
