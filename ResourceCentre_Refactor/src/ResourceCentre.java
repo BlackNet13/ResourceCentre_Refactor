@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class ResourceCentre {
+public class ResourceCentre {//
 
 
 	private static final int ITEM_TYPE_CHROMEBOOK = 2;
