@@ -3,6 +3,8 @@ import java.util.ArrayList;
 public class ResourceCentre {
 
 
+	private static final int EXIT_RESOURCE_CENTRE = 5;
+
 	public static void main(String[] args) {
 
 		ArrayList<Camcorder> camcorderList = new ArrayList<Camcorder>();
@@ -15,7 +17,7 @@ public class ResourceCentre {
 
 		int option = 0;
 
-		while (option != 5) {
+		while (option != EXIT_RESOURCE_CENTRE) {
 
 			ResourceCentre.menu();
 			option = Helper.readInt("Enter an option > ");
